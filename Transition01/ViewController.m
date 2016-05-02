@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ViewController2.h"
+#import "ViewController2.h"         // 読み込み
 
 @interface ViewController ()
 
@@ -26,8 +26,10 @@
 }
 
 
+//画面遷移時に呼ばれるメソッド
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
+    //ここでパラメータを渡す
     ViewController2 *new = [segue destinationViewController];
     new.str = _myText.text;
     //NSLog(@"%@",_myText.text);
@@ -36,11 +38,12 @@
 
 
 - (IBAction)doneBtn:(id)sender {
-    // セグエー”textToNext”を実行
+    // 次の画面へ遷移
     [self performSegueWithIdentifier:@"textToNext" sender:self];
 }
 
 
+// 前の画面に戻る
 - (IBAction)returnFirstView:(UIStoryboardSegue *)segue {}
 
 

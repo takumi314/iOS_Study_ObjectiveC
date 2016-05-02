@@ -10,7 +10,9 @@
 
 @interface ViewController2 : UIViewController
 
+// パラメーターを渡す変数を宣言
 @property (nonatomic) NSString *str;
+// 渡されたパラメーター表示用ラベルを宣言
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 
 

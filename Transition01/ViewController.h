@@ -10,7 +10,9 @@
 
 @interface ViewController : UIViewController
 
+// 入力フィールドを宣言
 @property (weak, nonatomic) IBOutlet UITextField *myText;
+// ボタン・プロパティを宣言
 - (IBAction)doneBtn:(id)sender;
 
 

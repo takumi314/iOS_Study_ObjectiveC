@@ -20,6 +20,8 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     //NSLog(@"%@",str);
+    
+    //ラベルに前の画面から受け取った引数を表示
     self.myLabel.text = _str;
     //self.myLabel.text = str;
 
