@@ -30,7 +30,7 @@
 
     ViewController2 *new = [segue destinationViewController];
     new.str = _myText.text;
-    NSLog(@"%@",_myText.text);
+    //NSLog(@"%@",_myText.text);
 }
 
 
